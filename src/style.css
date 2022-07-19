@@ -96,33 +96,87 @@ button:focus-visible {
   } */
 /* } */
 
-
-
-
-.create-element-div{ 
-display: inline-block;
-/* grid-template-columns: auto; */
-padding: 0 10px;
-border: 1px solid rgba(41, 40, 40, 0.353);
-border-radius: 10px ;
-margin: 0px 10px;
-background-color: rgba(3, 3, 3, 0.567);
-margin-bottom: 10px;
-}
-.create-element-img{
-border-radius: 10px;
-padding-top: 5px;
-
-}
-.create-element-h2{
-color: rgb(222, 217, 217);
-
+.logo {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-left: 1rem;
 }
 
-.material-symbols-outlined{
-padding-left: 65px;
+.first-list {
+  list-style: none;
 }
-body{
-background-color: rgba(17, 13, 13, 0.874);
+.first-item > a {
+  text-decoration: none;
+  color: rgb(219, 217, 217);
+  font-weight: bolder;
+  font-size: 20px;
+}
 
+.first-list > li{
+  padding-top: 10px;
+}
+
+.playlists{
+  color: grey;
+  padding-left: 1rem;
+}
+
+.songs-playlists{
+  list-style: none;
+}
+
+.songs-playlists >li{
+  padding-top: 10px;
+}
+
+.song-genre >a {
+  text-decoration: none;
+  color: rgb(219, 217, 217);
+  font-weight: bolder;
+  font-size: 20px;
+
+}
+
+
+.create-element-div {
+  display: inline-block;
+  /* grid-template-columns: auto; */
+  padding: 0 10px;
+  border: 1px solid rgba(41, 40, 40, 0.353);
+  border-radius: 10px;
+  margin: 0px 10px;
+  background-color: rgba(23, 21, 21, 0.567);
+  margin-bottom: 10px;
+  margin-top: em;
+}
+.create-element-img {
+  border-radius: 10px;
+  padding-top: 5px;
+}
+.create-element-h2 {
+  color: rgb(222, 217, 217);
+}
+
+.create-element-h3{
+  color: grey;
+  font-size: 15px;
+}
+
+.material-symbols-outlined {
+  padding-left: 65px;
+  color: white;
+  float: right;
+}
+body {
+  background-color: rgba(17, 13, 13, 0.874);
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 2fr auto;
+  
+}
+
+.left-side{
+  margin-right: 1rem;
 }
