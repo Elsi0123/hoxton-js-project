@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -93,5 +93,36 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
-  }
+  } */
+/* } */
+
+
+
+
+.create-element-div{ 
+display: inline-block;
+/* grid-template-columns: auto; */
+padding: 0 10px;
+border: 1px solid rgba(41, 40, 40, 0.353);
+border-radius: 10px ;
+margin: 0px 10px;
+background-color: rgba(3, 3, 3, 0.567);
+margin-bottom: 10px;
+}
+.create-element-img{
+border-radius: 10px;
+padding-top: 5px;
+
+}
+.create-element-h2{
+color: rgb(222, 217, 217);
+
+}
+
+.material-symbols-outlined{
+padding-left: 65px;
+}
+body{
+background-color: rgba(17, 13, 13, 0.874);
+
 }
