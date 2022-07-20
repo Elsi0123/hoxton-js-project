@@ -98,7 +98,7 @@ let state: State = {
   },
   {
     id: 9,
-    title: "Ht Waves",
+    title: "Heat Waves",
     genre: "Pop",
     thumbnail: "",
     src: "https://i.ytimg.com/vi/mRD0-GxqHVo/maxresdefault.jpg",
@@ -131,6 +131,19 @@ let state: State = {
 ]
 }
 
+// let inputEl = document.createElement("input");
+//   inputEl.className = "search";
+//   inputEl.type = "text";
+//   inputEl.placeholder = "Search Music";
+//   let musicDiv = document.createElement("div");
+//   musicDiv.className = "music";
+//   let pinDropEl = document.createElement("span");
+//   pinDropEl.className = "material-symbols";
+//   pinDropEl.textContent = "pin_drop";
+
+//   inputEl.appendChild(inputEl);
+
+
 let songsContainer = document.getElementById("songs");
 // let sound = new Howl({
 //     src: ['https://youtu.be/SA7AIQw-7Ms'],
@@ -139,7 +152,15 @@ let songsContainer = document.getElementById("songs");
 //   sound.play()
 
 function renderSongs() {
+<<<<<<< HEAD
   for (let song of state.songs) {
+=======
+  for (let song of songs) {
+
+   
+    
+
+>>>>>>> e9ec2c6659f65ae3d030b5cd5673131819183c0b
 
  
     let divItem = document.createElement("div");
