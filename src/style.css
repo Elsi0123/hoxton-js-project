@@ -180,3 +180,11 @@ body {
 .left-side{
   margin-right: 1rem;
 }
+
+.search{
+  background: rgb(234, 230, 230);
+  color: black;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 100%;
+}
