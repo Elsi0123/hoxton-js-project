@@ -113,6 +113,19 @@ let songs = [
   },
 ];
 
+// let inputEl = document.createElement("input");
+//   inputEl.className = "search";
+//   inputEl.type = "text";
+//   inputEl.placeholder = "Search Music";
+//   let musicDiv = document.createElement("div");
+//   musicDiv.className = "music";
+//   let pinDropEl = document.createElement("span");
+//   pinDropEl.className = "material-symbols";
+//   pinDropEl.textContent = "pin_drop";
+
+//   inputEl.appendChild(inputEl);
+
+
 let songsContainer = document.getElementById("songs");
 // let sound = new Howl({
 //     src: ['https://youtu.be/SA7AIQw-7Ms'],
@@ -122,6 +135,9 @@ let songsContainer = document.getElementById("songs");
 
 function renderSongs() {
   for (let song of songs) {
+
+   
+    
 
 
     let divItem = document.createElement("div");
