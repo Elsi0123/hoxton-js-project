@@ -12,7 +12,24 @@
 // }
 import "./style.css";
 
-let songs = [
+type Song = {
+    id: number;
+    title: string;
+    genre: string;
+    thumbnail: string;
+    src: string;
+    author: string
+}
+
+type State = {
+    songs:Song[];
+    selectedSong: Song | null
+
+}
+
+
+let state: State = { 
+    songs:[
   {
     id: 1,
     title: "Maps",
@@ -111,7 +128,8 @@ let songs = [
     src: "https://i.ytimg.com/vi/JRFkj_F7YlE/maxresdefault.jpg",
     author: "Maneskin",
   },
-];
+]
+}
 
 let songsContainer = document.getElementById("songs");
 // let sound = new Howl({
@@ -121,7 +139,8 @@ let songsContainer = document.getElementById("songs");
 //   sound.play()
 
 function renderSongs() {
-  for (let song of songs) {
+  for (let song of state.songs) {
+
  
     let divItem = document.createElement("div");
     divItem.className = 'create-element-div'
@@ -129,9 +148,12 @@ function renderSongs() {
     let imgItem = document.createElement("img")
     imgItem.className = 'create-element-img'
     imgItem.src = song.src;
+    imgItem.addEventListener('click', function(){
+        selectSong()
+    })
     imgItem.width = 180;
 
-    let h2Tittle = document.createElement("h4");
+    let h2Tittle = document.createElement("h2");
     h2Tittle.className = 'create-element-h2'
     h2Tittle.textContent = song.title;
 
@@ -148,5 +170,60 @@ function renderSongs() {
 
   }
 }
+
+function selectSong () {
+  let selectedSong = songs
+}
+
+function deselectSong(){
+     let selectedSong = null
+}
+
+function renderSingleSong(){
+    let divContainer = document.querySelector('div')
+
+    let buttonBack = document.createElement('button')
+    buttonBack.className = 'back-button'
+    buttonBack.textContent = 'Back'
+    buttonBack.addEventListener('mouseenter', function(){
+        deselectSong()
+        render()
+    })
+
+    let divSingleSong = document.createElement('div')
+    divSingleSong.className = 'single-song'
+
+    let imgItem = document.createElement('img')
+    imgItem.textContent = state.selectedSong?.src
+
+    let h2Tittle = document.createElement('h2')
+    h2Tittle.textContent = state.selectedSong?.title
+
+   let h3Author = document.createElement('h3')
+   h3Author.textContent = state.selectedSong?.author
+
+   let spanSong = document.createElement('span')
+   spanSong.className = "material-symbols-outlined"
+   spanSong.textContent = "skip_previous"
+
+
+  let spanSongPlay = document.createElement('span')
+   spanSongPlay.className = "material-symbols-outlined"
+   spanSongPlay.textContent = "play_pause"
+
+   let spanSongNext = document.createElement('span')
+   spanSongNext.className = "material-symbols-outlined"
+   spanSongNext.textContent = "skip_next"
+
+divContainer?.append(buttonBack, divSingleSong)
+divSingleSong.append(imgItem,h2Tittle,h3Author,spanSong,spanSongPlay,spanSongNext)
+
+}
+
+function render(){
+    if(state.selectedSong) renderSingleSong()
+    else renderSongs()
+}
+
 
 renderSongs();
