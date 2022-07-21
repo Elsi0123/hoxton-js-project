@@ -63,7 +63,7 @@ const songs = [
     {
         id: 4,
         title: "Hymn For The Weekend",
-        playlist: "",
+        playlist: "Latin",
         thumbnail: "https://i.ytimg.com/vi/HJrKVYJdABc/maxresdefault.jpg",
         audio: "",
         author: "Coldplay",
@@ -211,15 +211,8 @@ function renderSongs() {
         let favorite = document.createElement("div");
         favorite.className = "material-symbols-outlined heart";
         favorite.textContent = "favorite";
-
-        if(song.favourited) {
-            favorite.style.color = 'red'
-        }
-        
         favorite.addEventListener('click', function () {
-            song.favourited = !song.favourited
-
-            favorite.style.color = song.favourited ? 'red' : 'white'
+            song.favourited = true
         })
 
         divItem.append(imgItem, h2Tittle, h3Author, favorite);
@@ -229,6 +222,10 @@ function renderSongs() {
 
 function selectSong(song: Song) {
     state.selectedSong = song
+}
+
+function deselectSong() {
+    let selectedSong = null
 }
 
 function renderSingleSong() {
@@ -338,16 +335,13 @@ function renderSongControls() {
     })
 }
 
-function favorite(){
+function initialise() {
     document.getElementById('favorite-btn').addEventListener('click', function () {
         state.filteredSongs = state.songs.filter(song => song.favourited)
 
         renderSongs()
-})
+    })
 
-}
-
-function search(){
     document.getElementById('search-input').addEventListener('keyup', function (event) {
         state.filteredSongs = state.songs.filter(song => {
             let title = song.title.toLowerCase()
@@ -355,14 +349,10 @@ function search(){
 
             return title.includes(search)
         })
+
         renderSongs()
-})
-}
+    })
 
-
-function initialise() {
-    favorite()
-    search()   
     renderPlaylists()
     renderSongs();
     renderSongControls()
