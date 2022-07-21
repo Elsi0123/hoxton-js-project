@@ -63,7 +63,7 @@ const songs = [
     {
         id: 4,
         title: "Hymn For The Weekend",
-        playlist: "Latin",
+        playlist: "",
         thumbnail: "https://i.ytimg.com/vi/HJrKVYJdABc/maxresdefault.jpg",
         audio: "",
         author: "Coldplay",
