@@ -105,7 +105,7 @@ button:focus-visible {
 .first-list {
   list-style: none;
 }
-.first-item > a {
+.first-item {
   text-decoration: none;
   color: rgb(219, 217, 217);
   font-weight: bolder;
@@ -129,18 +129,16 @@ button:focus-visible {
   padding-top: 10px;
 }
 
-.song-genre >a {
+.song-playlist {
   text-decoration: none;
   color: rgb(219, 217, 217);
   font-weight: bolder;
   font-size: 20px;
-
+  cursor: pointer;
 }
 
-
 .create-element-div {
-  display: inline-block;
-  /* grid-template-columns: auto; */
+  position: relative;
   padding: 0 10px;
   border: 1px solid rgba(41, 40, 40, 0.353);
   border-radius: 10px;
@@ -150,30 +148,44 @@ button:focus-visible {
   margin-top: em;
 }
 .create-element-img {
+  width: 100%;
   border-radius: 10px;
-  padding-top: 5px;
+  margin-top: 20px;
 }
 .create-element-h2 {
-  color: rgb(222, 217, 217);
+  color: white;
 }
 
 .create-element-h3{
-  color: grey;
+  color: #E4E4E4;
   font-size: 15px;
 }
 
-.material-symbols-outlined {
-  padding-left: 65px;
+.heart {
   color: white;
   float: right;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48
 }
+.heart:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.controls:hover {
+  cursor: pointer;
+  color: red;
+}
+
 body {
-  background-color: rgba(17, 13, 13, 0.874);
+  background-color: black;
 }
 
 .container{
   display: grid;
-  grid-template-columns: 2fr auto;
+  grid-template-columns: 2fr 19fr;
   
 }
 
@@ -187,4 +199,45 @@ body {
   border-radius: 5px;
   padding: 1rem;
   width: 100%;
+}
+
+.songs-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.single-song {
+  margin: auto;
+  width: 30%;
+}
+
+.songs-controls {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 6px;
+  padding: 2rem 8rem;
+}
+
+.back-btn > .material-symbols-outlined {
+  font-size: 40px;
+}
+
+/*.back-btn > .material-symbols-outlined:hover {
+  cursor: pointer;
+}*/
+
+.play-btn > .material-symbols-outlined {
+  font-size: 40px;
+}
+
+.next-btn > .material-symbols-outlined {
+  font-size: 40px;
+}
+
+.pause-btn {
+  display: none;
+}
+.pause-btn > .material-symbols-outlined {
+  font-size: 40px;
 }
