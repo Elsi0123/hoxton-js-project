@@ -179,10 +179,6 @@ button:focus-visible {
   color: red;
 }
 
-.first-item{
- cursor: pointer;
-}
-
 body {
   background-color: black;
 }
@@ -218,7 +214,7 @@ body {
 .songs-controls {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(86, 83, 83);
+  background-color: white;
   border-radius: 6px;
   padding: 2rem 8rem;
 }
