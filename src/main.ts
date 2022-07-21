@@ -63,7 +63,7 @@ const songs = [
     {
         id: 4,
         title: "Hymn For The Weekend",
-        playlist: "Latin",
+        playlist: "",
         thumbnail: "https://i.ytimg.com/vi/HJrKVYJdABc/maxresdefault.jpg",
         audio: "hoxton-music/dance-pop/Coldplay_Hymn_For_The_Weekend_Official_Video_.mp3",
         author: "Coldplay",
