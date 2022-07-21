@@ -179,6 +179,10 @@ button:focus-visible {
   color: red;
 }
 
+.first-item{
+ cursor: pointer;
+}
+
 body {
   background-color: black;
 }
