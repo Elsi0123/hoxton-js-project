@@ -435,9 +435,6 @@ function deleteSongsContainer() {
 
 function togglePageSub() {
     let el = document.getElementById('page-sub')
-    document.getElementById('page-sub')?.addEventListener('click', function(){
-        renderSongs()
-    })
     
     if (el.style.display === 'none') {
         el.style.display = 'block'
