@@ -221,6 +221,9 @@ body {
   background-color: rgb(86, 83, 83);
   border-radius: 50px;
   padding: 1rem 2rem;
+  position: fixed;
+  bottom: 0;
+  width: 86.5%;
 }
 
 .back-btn > .material-symbols-outlined {

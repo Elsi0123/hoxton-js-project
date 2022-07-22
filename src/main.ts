@@ -436,6 +436,7 @@ function deleteSongsContainer() {
 
 function togglePageSub() {
     let el = document.getElementById('page-sub')
+    
     if (el.style.display === 'none') {
         el.style.display = 'block'
     } else {
