@@ -53,7 +53,7 @@ const songs = [
     {
         id: 3,
         title: "WHOOPTY ",
-        playlist: "Hip-Hop",
+        playlist: "Rap-core",
         thumbnail: "https://i.ytimg.com/vi/bJE6-uGmjpI/maxresdefault.jpg",
         audio: "hoxton-music/dance-pop/CJ_WHOOPTY_Official_Music_Video_.mp3",
         author: "Cj",
@@ -72,7 +72,7 @@ const songs = [
     {
         id: 5,
         title: "The Nights",
-        playlist: "Rock",
+        playlist: "Pop",
         thumbnail: "https://i.ytimg.com/vi/pLCBf1NljyM/maxresdefault.jpg",
         audio: "hoxton-music/dance-pop/Avicii_The_Nights.mp3",
         author: "Avicii",
@@ -126,7 +126,7 @@ const songs = [
     {
         id: 11,
         title: "Pop on Broadway",
-        playlist: "Hip-Hop",
+        playlist: "Rap-core",
         thumbnail: "https://i.ytimg.com/vi/VZQ_WpE-Lec/maxresdefault.jpg",
         audio: "hoxton-music/dance-pop/DaBaby_BOP_on_Broadway_Hip_Hop_Musical_.mp3",
         author: "DaBaby ",
@@ -135,7 +135,7 @@ const songs = [
     {
         id: 12,
         title: "New York",
-        playlist: "Pop",
+        playlist: "Rap-core",
         thumbnail: "https://s.yimg.com/ny/api/res/1.2/nLvtZ_KI9tAbGxzTBmRSiA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0MA--/https://s.yimg.com/uu/api/res/1.2/QimL8NaQyn4aB5yIQQos1g--~B/aD0xMDgwO3c9MTkyMDthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/complex584/86db455a9df471b84970cb69a5817223",
         audio: "hoxton-music/dance-pop/Rowdy_Rebel_New_York_Official_Music_Video_ft_.mp3",
         author: "Rowdy Rebel ",
@@ -180,7 +180,7 @@ const songs = [
     {
         id: 17,
         title: "Falling",
-        playlist: "Folk",
+        playlist: "Classic",
         thumbnail: "https://i.ytimg.com/vi/L7mfjvdnPno/maxresdefault.jpg",
         audio: "hoxton-music/dance-pop/Trevor_Daniel_Falling_Official_Music_Video_.mp3",
         author: "Trevor Daniel ",
@@ -243,7 +243,7 @@ const songs = [
     {
         id: 24,
         title: "детство",
-        playlist: "Folk",
+        playlist: "Classic",
         thumbnail: "https://i.ytimg.com/vi/WJF5Z1WRcqw/maxresdefault.jpg",
         audio: "hoxton-music/dance-pop/Rauf_Faik_детство_Official_audio_.mp3",
         author: "Rauf ft Faik ",
@@ -252,7 +252,7 @@ const songs = [
     {
         id: 25,
         title: "Impossible",
-        playlist: "Folk",
+        playlist: "Classic",
         thumbnail: "https://i.ytimg.com/vi/Mhj15W23IjA/maxresdefault.jpg",
         audio: "hoxton-music/dance-pop/James_Arthur_Impossible_Official_Video_.mp3",
         author: "James Arthur",
@@ -316,9 +316,10 @@ let state: State = {
         'Rock',
         'Pop',
         'Hip-Hop',
-        'Folk',
+        'Classic',
         'Latin',
         'Jazz',
+        'Rap-core',
     ],
 
     filteredSongs: songs
